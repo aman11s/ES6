@@ -69,3 +69,17 @@ console.log(surname); */
 const arr = ["MA", "TA", "PA", "CA"];
 [firstName, surname] = arr;
 console.log(firstName, surname);
+
+/* Que 6
+
+var Aaloo = "Tasty";
+var Bhaloo = "Cute";
+var Obj = {
+  Aaloo: Aaloo,
+  Bhaloo: Bhaloo
+}; */
+
+const Aaloo = 'Tasty';
+const Bhaalo = 'Cute';
+const Obj = { Aaloo, Bhaalo };
+console.log(Obj);
