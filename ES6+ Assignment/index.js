@@ -154,3 +154,16 @@ var operation = avengers.operation,
 
   console.log(operation);
   console.log(members);
+
+  // -> Comvert ES6 to ES5
+
+  /* Que 10
+    const packIt = (...args) => console.log(args)
+    packIt(1,2,3,5,5)
+  */
+
+    function packIt() {
+        console.log(Array.from(arguments));
+    }
+    packIt(1,2,3,5,5);
+
