@@ -141,29 +141,49 @@ var avengers = {
 var operation = avengers.operation,
   members = avengers.members; */
 
-  const avengers = {
-      operation : 'Assemble',
-      members: [
-          { ironMan: 'Tony Stark' },
-          { captainAmerica: 'Steve Rogers' },
-          { blackWidow: 'Natasha Romanoff' }
-      ]
-  };
+const avengers = {
+    operation: 'Assemble',
+    members: [
+        { ironMan: 'Tony Stark' },
+        { captainAmerica: 'Steve Rogers' },
+        { blackWidow: 'Natasha Romanoff' }
+    ]
+};
 
-  const {operation, members} = avengers;
+const { operation, members } = avengers;
 
-  console.log(operation);
-  console.log(members);
+console.log(operation);
+console.log(members);
 
-  // -> Comvert ES6 to ES5
+// -> Comvert ES6 to ES5
 
-  /* Que 10
-    const packIt = (...args) => console.log(args)
-    packIt(1,2,3,5,5)
-  */
+/* Que 10
+  const packIt = (...args) => console.log(args)
+  packIt(1,2,3,5,5)
+*/
 
-    function packIt() {
-        console.log(Array.from(arguments));
-    }
-    packIt(1,2,3,5,5);
+function packIt() {
+    console.log(Array.from(arguments));
+}
+packIt(1, 2, 3, 5, 5);
+
+/* -> Guess the output
+    
+Que 11
+
+const hello = () => "Hello"
+const welcome = () => "Welcome"
+const [Hello = hello(), Welcome = welcome()] = ["Namaste"]
+console.log(Hello, Welcome) -> Namaste Welcome
+
+Que 12
+
+*/
+const obj = {
+    aloo : 1,
+    bhallo : 2
+}
+const {c : aloo = [2,3,4].push(5), aloo} = obj 
+console.log(aloo)
+
 
