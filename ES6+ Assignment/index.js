@@ -178,12 +178,12 @@ console.log(Hello, Welcome) -> Namaste Welcome
 
 Que 12
 
-*/
 const obj = {
-    aloo : 1,
-    bhallo : 2
+  aloo1 : 1,
+  bhallo : 2
 }
-const {c : aloo = [2,3,4].push(5), aloo} = obj 
-console.log(aloo)
+const {c : aloo1 = [2,3,4].push(5), aloo1} = obj 
+console.log(aloo1) -> SyntaxError: Identifier 'aloo1' has already been declared.
 
+*/
 
